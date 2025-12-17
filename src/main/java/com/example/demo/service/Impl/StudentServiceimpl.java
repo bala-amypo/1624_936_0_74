@@ -13,7 +13,8 @@ public class StudentServiceimpl implements StudentService{
         //findById()
         //deleteById()
         //existById()
-         StudentEntity postData(StudentEntity stu){
+    @Override
+           public StudentEntity postData(StudentEntity stu){
              return student.save(stu);
          }
 }
