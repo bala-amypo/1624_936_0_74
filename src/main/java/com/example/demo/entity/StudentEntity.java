@@ -1,14 +1,16 @@
 package.com.example.demo.entity;
+import java.util.Date;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 @Entity
 public class StudentEntity{
+    @Id
     private Integer id;
     private String name;
     private String email;
     private String password;
     private Date date;
 
-}
-  
 public Integer getId() {
     return id;
     }
@@ -45,5 +47,9 @@ public  StudentEntity(Integer id, String name,String email,String password,Date 
      this.email=email;
      this.password=password;
      this.date=date;
+
   }
-   public 
+  public StudentEntity(){
+
+  }
+}
