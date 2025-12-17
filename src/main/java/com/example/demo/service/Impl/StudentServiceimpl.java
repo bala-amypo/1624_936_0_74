@@ -1,6 +1,6 @@
 package com.example.demo.service.Impl;
 import org.springframework.stereotype.service;
-import org.springframework.beans.factory.annotation.Autowrite;
+import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.entity.StudentRepo;
 import com.example.demo.entity.StudentService;
