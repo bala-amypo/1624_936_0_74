@@ -1,13 +1,14 @@
 package.com.example.demo.entity;
 @Entity
 public class StudentEntity{
-    private Integer Id;
+    private Integer id;
     private String name;
     private String email;
     private String password;
     private Date date;
 
 }
+  
 public Integer getId() {
     return id;
     }
@@ -38,3 +39,11 @@ public Date getDate(){
 public void setDate(Date date){
     this.date=date;
 }
+public  StudentEntity(Integer id, String name,String email,String password,Date date){
+     this.id=id;
+     this.name=name;
+     this.email=email;
+     this.password=password;
+     this.date=date;
+  }
+   public 
