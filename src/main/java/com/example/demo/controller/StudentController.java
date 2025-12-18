@@ -14,5 +14,8 @@ public class StudentController{
   public StudentEntity sendData(@RequestBody StudentEntity ent){
       return ser.postData(ent);
   }
-  @GetMapping
+  @GetMapping("/get")
+  public StudentEntity getData(@RequestBody StudentEntity ent){
+    retur ser.getData(ent);
+  }
 }
