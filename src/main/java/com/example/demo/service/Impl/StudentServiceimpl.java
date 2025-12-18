@@ -4,8 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.repository.StudentRepo;
 import com.example.demo.service.StudentService;
-import 
-import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 @Service
 public class StudentServiceimpl implements StudentService{
