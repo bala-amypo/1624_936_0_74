@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.repository.ValidationRepo;
 import com.example.demo.service.ValidationService;
 @Service
-public ValidationServiceimpl implements ValidationService{
+public class ValidationServiceimpl implements ValidationService{
   @Autowired ValidationRepo validate;
   @Override
    public ValidationEntity postData(ValidationEntity val){
