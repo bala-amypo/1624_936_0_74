@@ -4,3 +4,4 @@ public interface StudentService{
     StudentEntity postData(StudentEntity stu);
     
 }
+public interface 
