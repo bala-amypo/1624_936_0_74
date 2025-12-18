@@ -62,6 +62,13 @@ public ValidationEntity(Long id,
     @Size(Max=6)
   @NotNull(message="password is mandatory")String password,  @Max(30)
   @Positive(message="Age must be positive")int age){
-    this.
+    this.id=id;
+    this.name=name;
+    this.email=email;
+    this.password=password;
+    this.age=age;
+  }
+  public ValidationEntity(){
+    
   }
 }
