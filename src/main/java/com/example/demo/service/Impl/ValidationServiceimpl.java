@@ -3,7 +3,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.ValidationEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.repository.ValidationRepo;
-imoprt com.example.demo.service
+import com.example.demo.service.ValidationService;
 @Service
 public ValidationServiceimpl implements ValidationService{
   @Autowired ValidationRepo validate;
@@ -11,4 +11,5 @@ public ValidationServiceimpl implements ValidationService{
    public ValidationEntity postData(ValidationEntity val){
              return validate.save(val);
 
+}
 }
