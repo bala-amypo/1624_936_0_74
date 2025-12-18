@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.repository.StudentRepo;
 import com.example.demo.service.StudentService;
-
+import java.util.List;
 @Service
 public class StudentServiceimpl implements StudentService{
         @Autowired StudentRepo student;
@@ -17,4 +17,8 @@ public class StudentServiceimpl implements StudentService{
            public StudentEntity postData(StudentEntity stu){
              return student.save(stu);
          }
+         @Override
+         
+         public List<StudentEntity>getAllData();
+         return student.findAll();
 }
