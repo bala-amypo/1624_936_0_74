@@ -10,6 +10,5 @@ public ValidationServiceimpl implements ValidationService{
   @Override
    public ValidationEntity postData(ValidationEntity val){
              return validate.save(val);
-
-}
+      }
 }
