@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 @RestController
 public class ValidationController{
   @Autowired ValidationService va;
-  @PostMapping("/post")
+  @PostMapping("/postvalue")
   public ValidationEntity sendData(@Valid @RequestBody ValidationEntity val){
       return va.postData(val);
   }
