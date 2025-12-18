@@ -32,4 +32,5 @@ public class StudentServiceimpl implements StudentService{
          public StudentEntity getData(int id){
           return student.findById(id).orElse(null);
          }
+         
 }
