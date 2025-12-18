@@ -50,10 +50,10 @@ public String getPassword(){
 public void setPassword(String password){
     this.password=password;
 }
-public void getAge(){
+public int getAge(){
     return age;
 }
-public int setAge(int age){
+public void setAge(int age){
     this.age=age;
 }
 public ValidationEntity(Long id,
