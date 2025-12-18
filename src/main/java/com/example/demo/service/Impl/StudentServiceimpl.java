@@ -20,5 +20,5 @@ public class StudentServiceimpl implements StudentService{
          @Override
          
          public List<StudentEntity>getAllData();
-         return student.findAll();
+         return .findAll();
 }
