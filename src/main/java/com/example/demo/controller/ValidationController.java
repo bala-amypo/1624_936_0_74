@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 public class ValidationController{
   @Autowired ValidationService va;
   @PostMapping("/post")
-  public ValidationEntity sendData(@RequestBody ValidationEntity val){
+  public ValidationEntity sendData(@Valid.@RequestBody.ValidationEntity.val){
       return va.postData(val);
   }
 }
