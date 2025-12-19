@@ -20,7 +20,6 @@ public class StudentID{
     private String stuid;
     
     @OneToOne
-    private 
     @JoinColumn(name = "student_id")
     private StudentDetails students;
 }
