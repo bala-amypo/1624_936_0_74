@@ -20,6 +20,7 @@ public class StudentID{
     private String stuid;
     
     @OneToOne
-    @JoinColumn(name
+    private 
+    @JoinColumn(name = "student_id")
     private StudentDetails students;
 }
