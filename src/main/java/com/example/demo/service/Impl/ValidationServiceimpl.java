@@ -12,7 +12,7 @@ public class ValidationServiceimpl implements ValidationService{
              return validate.save(val);
       }
        @Override
-         public ValidationEntity getData(int id){
-          return validate.findById(id).orElse(other:null);
+         public ValidationEntity getData(Integer id){
+          return validate.findById(id).orElseThrow();
          }
 }
