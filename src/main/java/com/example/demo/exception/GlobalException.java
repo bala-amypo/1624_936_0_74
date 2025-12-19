@@ -7,8 +7,8 @@ import com.example.demo.exception.ValidationException;
 @RestControllerAdvice
 public class GlobalException{
     @ExceptionHandler(ValidationException.class)
-    public ResponseBody<String> handleValidationexception(ValidationException ex){
-        return new ResponseBody<String>(ex.getMessage(),HttpStatus.BAD_GATEWAY);
+    public ResponseEntity<String> handleValidationexception(ValidationException ex){
+        return new ResponseEntity<String>(ex.getMessage(),HttpStatus.BAD_GATEWAY);
     }
 
 }
