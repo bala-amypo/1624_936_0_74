@@ -22,6 +22,8 @@ public class TimeStamp{
     private LocalDateTime updated;
     @PrePersist
     public void onCreate(){
-        LocalDateTime now
+        LocalDateTime now=new LocalDateTime().now();
+        this.created=now;
+        this.updated=now;
     }
 }
