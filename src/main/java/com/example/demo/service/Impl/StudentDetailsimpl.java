@@ -9,7 +9,7 @@ public class StudentDetailsimpl implements StudentDetailsService{
         @Autowired StudentDetailsRepo det;
     
     @Override
-           public StudentDetails pos(StudentDetails sd){
+           public StudentDetails posData(StudentDetails sd){
              return det.save(sd);
          }
 }
