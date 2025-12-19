@@ -16,4 +16,7 @@ public class StudentID{
     private Integer id;
     private String idno;
     private String stuid;
+    
+    @
+    private StudentDetails students;
 }
