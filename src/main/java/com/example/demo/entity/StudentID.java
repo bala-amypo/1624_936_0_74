@@ -6,6 +6,8 @@ import jakarta.persistence.GenerationType;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
 @Entity
 @Data
 @AllArgsConstructor
@@ -17,6 +19,7 @@ public class StudentID{
     private String idno;
     private String stuid;
     
-    @
+    @OneToOne
+    @JoinColumn(name
     private StudentDetails students;
 }
