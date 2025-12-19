@@ -21,4 +21,7 @@ public class TimeStamp{
     private LocalDateTime created;
     private LocalDateTime updated;
     @PrePersist
+    public void onCreate(){
+        
+    }
 }
