@@ -28,4 +28,7 @@ public class TimeStamp{
         this.updated=now;
     }
     @PreUpdate
+    public void Onupdate{
+     this.updatedAt=now;
+    }
 }
