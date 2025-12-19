@@ -6,11 +6,16 @@ import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationService;
 import org.springframework.web.bind.annotation.RequestBody;
 import jakarta.validation.Valid;
+import org.springframework.web.bind.annotation.PathVariable;
 @RestController
 public class ValidationController{
   @Autowired ValidationService va;
   @PostMapping("/postvalue")
   public ValidationEntity sendData(@Valid @RequestBody ValidationEntity val){
       return va.postData(val);
+  }
+   @GetMapping("/get/{id}")
+  public ValidationEntity getDatid(@Valid @PathVariable Long id){
+    return va.getDat(id);
   }
 }
