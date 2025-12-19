@@ -19,16 +19,17 @@ public class TimeStamp{
     private Long id;
     private String Name;
     private String email;
-    private LocalDateTime created;
-    private LocalDateTime updated;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
     @PrePersist
- public void Oncreate(){
+    protected void Oncreate(){
             LocalDateTime now=new LocalDateTime.now();
         this.created=now;
         this.updated=now;
     }
     @PreUpdate
-    public void Onupdate(){
+    protected void Onupdate(){
+             LocalDateTime now=new LocalDateTime.now();
      this.updatedAt=now;
     }
 }
