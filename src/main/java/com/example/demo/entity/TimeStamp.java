@@ -18,5 +18,5 @@ public class TimeStamp{
     private String Name;
     private String email;
     private LocalDateTime created;
-    private LocalDatetime updated;
+    private LocalDateTime updated;
 }
